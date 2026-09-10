@@ -1,12 +1,12 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig} from 'vite';
-import {VitePWA} from 'vite-plugin-pwa';
+import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig(() => {
   return {
-    base: './',
+    base: '/BerryChat/', // Fixed: Must match repository name exactly
     plugins: [
       react(),
       tailwindcss(),
@@ -24,7 +24,7 @@ export default defineConfig(() => {
           'donate_qr_code.png',
         ],
         manifest: {
-          id: './',
+          id: '/BerryChat/',
           name: 'Barrychat',
           short_name: 'Barrychat',
           description:
@@ -32,8 +32,8 @@ export default defineConfig(() => {
           theme_color: '#1a1218',
           background_color: '#1a1218',
           display: 'standalone',
-          start_url: './',
-          scope: './',
+          start_url: '/BerryChat/',
+          scope: '/BerryChat/',
           icons: [
             {
               src: 'pwa-192x192.png',
@@ -70,10 +70,7 @@ export default defineConfig(() => {
       },
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
-      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };
