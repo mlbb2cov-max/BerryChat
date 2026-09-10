@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Solid White Background -->
+  <rect width="512" height="512" fill="#ffffff" />
+
+  <g stroke="#4a434c" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Branch twig pointing up-left -->
+    <path d="M 120 295 L 62 260" />
+
+    <!-- Main branch lower curve -->
+    <path d="M 72 350 C 95 315, 150 268, 215 258" />
+
+    <!-- Twig pointing down between berries 1 and 2 -->
+    <path d="M 215 258 L 215 288" />
+
+    <!-- Main branch arching up towards top-right -->
+    <path d="M 215 258 C 240 180, 275 145, 350 118" />
+
+    <!-- Top main stem going off top-right -->
+    <path d="M 350 118 C 375 90, 395 55, 405 22" />
+
+    <!-- Upper-right branch going down -->
+    <path d="M 350 118 C 375 140, 388 175, 388 190" />
+
+    <!-- Twig pointing down-left from upper-right branch -->
+    <path d="M 388 180 L 378 226" />
+
+    <!-- Branch continuing to the right -->
+    <path d="M 388 180 C 405 205, 418 240, 428 248" />
+
+    <!-- Small twig pointing down -->
+    <path d="M 428 248 L 420 262" />
+
+    <!-- Branch tail curving right -->
+    <path d="M 428 248 C 450 255, 475 255, 498 242" />
+  </g>
+
+  <!-- Berries with thick dark borders -->
+  <!-- Left Berry (Coral Pink) -->
+  <g>
+    <circle cx="68" cy="435" r="54" fill="#ea8e88" stroke="#4a434c" stroke-width="17" />
+    <line x1="68" y1="462" x2="68" y2="482" stroke="#4a434c" stroke-width="15" stroke-linecap="round" />
+  </g>
+
+  <!-- Middle Berry (Apricot Yellow) -->
+  <g>
+    <circle cx="212" cy="365" r="56" fill="#f6c97a" stroke="#4a434c" stroke-width="17" />
+    <line x1="212" y1="394" x2="212" y2="414" stroke="#4a434c" stroke-width="15" stroke-linecap="round" />
+  </g>
+
+  <!-- Right Berry (Coral Pink) -->
+  <g>
+    <circle cx="412" cy="342" r="56" fill="#ea8e88" stroke="#4a434c" stroke-width="17" />
+    <line x1="412" y1="371" x2="412" y2="391" stroke="#4a434c" stroke-width="15" stroke-linecap="round" />
+  </g>
+</svg>
